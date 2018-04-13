@@ -30,7 +30,7 @@ namespace Players
 
         IObservable<Vector2> GetAxitsAsObservable(string axisXName, string axisYName)
         {
-            return _inputEventProvider.ContinueWith(i => i.GetAxitsAsObservable(axisXName, axisYName));
+            return _inputEventProvider.ContinueWith(i => i.GetAxisAsObservable(axisXName, axisYName));
         }
     }
 }

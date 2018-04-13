@@ -14,7 +14,7 @@ namespace Players.ImputEventImpls
                 .DistinctUntilChanged();
         }
 
-        public IObservable<Vector2> GetAxitsAsObservable(string axisXName, string axisYName)
+        public IObservable<Vector2> GetAxisAsObservable(string axisXName, string axisYName)
         {
             return this.UpdateAsObservable()
                 .Select(_ => new Vector2(Input.GetAxis(axisXName), Input.GetAxis(axisYName)));
