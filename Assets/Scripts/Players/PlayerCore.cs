@@ -14,6 +14,8 @@ namespace Players
 
         readonly ISubject<IInputEventProvider> _inputEventProvider = new AsyncSubject<IInputEventProvider>();
 
+        readonly ISubject<Unit> _cleared = new AsyncSubject<Unit>();
+
         [Inject]
         private void Initialize(IInputEventProvider inputEventProvider)
         {
@@ -31,13 +33,18 @@ namespace Players
             return _inputEventProvider.ContinueWith(i => i.GetAxisAsObservable(axisXName, axisYName));
         }
 
+        public IObservable<Unit> ClearedAsObservable()
+        {
+            return _cleared;
+        }
+
         void OnTriggerEnter2D(Collider2D collider)
         {
             if (collider.gameObject.name == "GoalFlag")
             {
-                Debug.Log("ゲームクリア") ;
+                _cleared.OnNext(Unit.Default);
+                _cleared.OnCompleted();
             }
-
         }
     }
 }
