@@ -1,5 +1,4 @@
 ﻿using UniRx;
-using UniRx.Triggers;
 using UnityEngine;
 
 namespace Players
@@ -8,7 +7,7 @@ namespace Players
     {
         [SerializeField] private PlayerCore _playerCore;
         [SerializeField] private Rigidbody2D _rigidbody;
-        [SerializeField] private Rigidbody2D _centorRigidbody;
+        [SerializeField] private Transform _centorTransform;
         [SerializeField] private Vector2 _centorOffset;
         [SerializeField] private float _range;
 
@@ -44,7 +43,7 @@ namespace Players
 
         Vector2 Centor()
         {
-            return _centorRigidbody.position + _centorOffset;
+            return _centorTransform.position + _centorTransform.rotation * _centorOffset;
         }
 
         void OnDrawGizmosSelected()
