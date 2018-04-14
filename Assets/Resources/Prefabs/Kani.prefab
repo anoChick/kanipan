@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerCore: {fileID: 114751587138750182}
   _rigidbody: {fileID: 50604657791782604}
-  _centorRigidbody: {fileID: 50162397185800606}
+  _centorTransform: {fileID: 4604963261417008}
   _centorOffset: {x: -0.65, y: 0.09}
   _range: 1.3
 --- !u!114 &114535418529985454
