@@ -9,9 +9,7 @@ namespace Players.ImputEventImpls
     {
         public IObservable<bool> GetButtonAsObservable(string buttonName)
         {
-            return this.UpdateAsObservable()
-                .Select(_ => Input.GetButton(buttonName))
-                .DistinctUntilChanged();
+            return this.ObserveEveryValueChanged(_ => Input.GetButton(buttonName));
         }
 
         public IObservable<Vector2> GetAxisAsObservable(string axisXName, string axisYName)
