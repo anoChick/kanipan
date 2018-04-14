@@ -30,5 +30,14 @@ namespace Players
         {
             return _inputEventProvider.ContinueWith(i => i.GetAxisAsObservable(axisXName, axisYName));
         }
+
+        void OnTriggerEnter2D(Collider2D collider)
+        {
+            if (collider.gameObject.name == "GoalFlag")
+            {
+                Debug.Log("ゲームクリア") ;
+            }
+
+        }
     }
 }
