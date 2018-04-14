@@ -11,9 +11,6 @@ namespace Players
 
         void Start()
         {
-            // samples
-            GetButtonAsObservable("Q").Subscribe(x => Debug.Log("Q: " + x));
-            GetAxitsAsObservable("Mouse X", "Mouse Y").Subscribe(x => Debug.Log("Axis: " + x)).AddTo(this);
         }
 
         [Inject]
@@ -23,7 +20,7 @@ namespace Players
             _inputEventProvider.OnCompleted();
         }
 
-        IObservable<bool> GetButtonAsObservable(string buttonName)
+        public IObservable<bool> GetButtonAsObservable(string buttonName)
         {
             return _inputEventProvider.ContinueWith(i => i.GetButtonAsObservable(buttonName));
         }
