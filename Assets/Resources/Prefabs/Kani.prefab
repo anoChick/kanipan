@@ -151,6 +151,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4067632719253084}
+  - component: {fileID: 114633348094172426}
   - component: {fileID: 212533429348199634}
   - component: {fileID: 50204822340103664}
   - component: {fileID: 60201877052382378}
@@ -1072,6 +1073,21 @@ MonoBehaviour:
   leftSide: 0
   playerCore: {fileID: 114751587138750182}
   _rigidbody: {fileID: 50100477876397072}
+--- !u!114 &114633348094172426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715783885347740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849146a2881364d37bd16721c7c97c8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerCore: {fileID: 114751587138750182}
+  _rigidbody: {fileID: 50204822340103664}
+  _immovableRigidbody: {fileID: 50604657791782604}
+  _targetRelativeAngle: 20
 --- !u!114 &114742624899081432
 MonoBehaviour:
   m_ObjectHideFlags: 1
