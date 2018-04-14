@@ -7,6 +7,11 @@ namespace Players
 {
     public class PlayerCore : MonoBehaviour
     {
+        [SerializeField]
+        private float power;
+
+        public float Power => power;
+
         readonly ISubject<IInputEventProvider> _inputEventProvider = new AsyncSubject<IInputEventProvider>();
 
         void Start()

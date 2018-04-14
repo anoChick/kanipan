@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Linq;
+using System.Collections;
 using UniRx;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,13 +17,14 @@ namespace Players
         private string keyCodeDown;
 
         [SerializeField]
+        private bool leftSide;
+
+        [SerializeField]
         private PlayerCore playerCore;
 
         [SerializeField]
         private Rigidbody2D _rigidbody;
 
-        [SerializeField]
-        private bool leftSide;
 
         private float forwardForce;
 
@@ -30,21 +33,36 @@ namespace Players
 
         void Start()
         {
-            forwardForce = leftSide ? -300f : 300f;
-            playerCore.GetButtonAsObservable(keyCodeUp).Where(pressed => pressed)
-                .SelectMany(pressed => this.FixedUpdateAsObservable(),(pressed,_) => pressed)
-                .First()
-                .Repeat()
-                .Subscribe(x => Open())
-                .AddTo(this);
+            var keyCodes = new[] { keyCodeUp, keyCodeDown };
+            forwardForce = leftSide ? -playerCore.Power : playerCore.Power;
 
-            playerCore.GetButtonAsObservable(keyCodeDown).Where(pressed => pressed)
-                .SelectMany(pressed => this.FixedUpdateAsObservable(), (pressed, _) => pressed)
-                .First()
-                .Repeat()
-                .Subscribe(x => Close())
+            keyCodes
+                .Select(x => KeyPressedAsObservable(x))
+                .Merge()
+                .Subscribe(OnPressedKey)
                 .AddTo(this);
+        }
 
+        void OnPressedKey(string keyCode)
+        {
+            if (keyCode == keyCodeUp)
+            {
+                Open();
+            }
+            else
+            {
+                Close();
+            }
+        }
+
+        IObservable<string> KeyPressedAsObservable(string keyCode)
+        {
+            return playerCore.GetButtonAsObservable(keyCode)
+                .Where(pressed => pressed)
+                .Select(_ => keyCode)
+                .SelectMany(c => this.FixedUpdateAsObservable(), (c, _) => c)
+                .First()
+                .Repeat();
         }
 
         void Open()
