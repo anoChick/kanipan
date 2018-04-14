@@ -14,10 +14,6 @@ namespace Players
 
         readonly ISubject<IInputEventProvider> _inputEventProvider = new AsyncSubject<IInputEventProvider>();
 
-        void Start()
-        {
-        }
-
         [Inject]
         private void Initialize(IInputEventProvider inputEventProvider)
         {
@@ -30,7 +26,7 @@ namespace Players
             return _inputEventProvider.ContinueWith(i => i.GetButtonAsObservable(buttonName));
         }
 
-        IObservable<Vector2> GetAxitsAsObservable(string axisXName, string axisYName)
+        public IObservable<Vector2> GetAxisAsObservable(string axisXName, string axisYName)
         {
             return _inputEventProvider.ContinueWith(i => i.GetAxisAsObservable(axisXName, axisYName));
         }
