@@ -2,7 +2,7 @@
 using UniRx;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UniRx.Triggers;
 
 namespace Players
 {
@@ -18,7 +18,7 @@ namespace Players
         private PlayerCore playerCore;
 
         [SerializeField]
-        private Rigidbody2D rigidbody;
+        private Rigidbody2D _rigidbody;
 
         [SerializeField]
         private bool leftSide;
@@ -30,9 +30,31 @@ namespace Players
 
         void Start()
         {
-            forwardForce = leftSide ? -700f : 700f;
-            playerCore.GetButtonAsObservable(keyCodeUp).Where(pressed => pressed).Subscribe(x => rigidbody.AddTorque(forwardForce));
-            playerCore.GetButtonAsObservable(keyCodeDown).Where(pressed => pressed).Subscribe(x => rigidbody.AddTorque( -forwardForce));
+            forwardForce = leftSide ? -300f : 300f;
+            playerCore.GetButtonAsObservable(keyCodeUp).Where(pressed => pressed)
+                .SelectMany(pressed => this.FixedUpdateAsObservable(),(pressed,_) => pressed)
+                .First()
+                .Repeat()
+                .Subscribe(x => Open())
+                .AddTo(this);
+
+            playerCore.GetButtonAsObservable(keyCodeDown).Where(pressed => pressed)
+                .SelectMany(pressed => this.FixedUpdateAsObservable(), (pressed, _) => pressed)
+                .First()
+                .Repeat()
+                .Subscribe(x => Close())
+                .AddTo(this);
+
+        }
+
+        void Open()
+        {
+            _rigidbody.AddTorque(forwardForce);
+        }
+
+        void Close()
+        {
+            _rigidbody.AddTorque(-forwardForce);
         }
     }
 }
