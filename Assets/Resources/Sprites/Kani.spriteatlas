@@ -32,28 +32,28 @@ SpriteAtlas:
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 78668ce7a12ac4e24a2f6d16964f460c, type: 3}
-  - {fileID: 21300000, guid: eeb730a1dcd6d4bf8af528b4f2da818b, type: 3}
-  - {fileID: 21300000, guid: 007ec3d3b81c6449cb618a4c4040e870, type: 3}
-  - {fileID: 21300000, guid: c8c01497ccdeb48f5a121cc5c5259880, type: 3}
-  - {fileID: 21300000, guid: 0dd099f10fc9e4e119d8c45a9269d389, type: 3}
-  - {fileID: 21300000, guid: 0a642abf474d84ebc9d1dad61654878e, type: 3}
-  - {fileID: 21300000, guid: d64546c758ac04d95a40556ce22d757b, type: 3}
-  - {fileID: 21300000, guid: 7e5c59bc486c642c5a633d2b9b7526b9, type: 3}
-  - {fileID: 21300000, guid: 4b549bc4faad047bbad50817c149aed7, type: 3}
-  - {fileID: 21300000, guid: 0f649411b3d83468fb2ff6432b888dc8, type: 3}
-  - {fileID: 21300000, guid: 977dfbd2387724fb3bd1a3960f260ac7, type: 3}
+  - {fileID: 21300000, guid: 585dd96279da248c3aa3e230505987b4, type: 3}
+  - {fileID: 21300000, guid: c1cf5f1544ec146eeb509be14aa1aaa1, type: 3}
+  - {fileID: 21300000, guid: 07be77cba1e8b4617969c5bde297618d, type: 3}
+  - {fileID: 21300000, guid: 39f8894ce07e34ff8bf9729e03be3d39, type: 3}
+  - {fileID: 21300000, guid: 9fff8f46c24e6467085dcd2a7d324a61, type: 3}
+  - {fileID: 21300000, guid: 59104e980cfdd4efcb7e63a5d3b69234, type: 3}
+  - {fileID: 21300000, guid: 0bd56c6822ee74b5c96842d33384c46b, type: 3}
+  - {fileID: 21300000, guid: db8a5e8d8a75a467a85745ca5bd17e19, type: 3}
+  - {fileID: 21300000, guid: d82207b51604340f19025cab41caeb55, type: 3}
+  - {fileID: 21300000, guid: 0a1f51e7442ea4a3bb505cc1bca76ea0, type: 3}
+  - {fileID: 21300000, guid: 94a1828fc51bb4f149893eb4c61c704e, type: 3}
   m_PackedSpriteNamesToIndex:
-  - kani__0006_body
-  - kani__0010_claw_top
-  - kani__0008_claw_bottom
-  - kani__0009_left_claw
-  - kani__0005_right_leg_3
-  - kani__0002_left_leg_3
-  - kani__0004_right_leg_2
-  - kani__0001_left_leg_2
-  - kani__0007_right_claw_arm
-  - kani__0003_right_leg_1
-  - kani__0000_left_leg_1
+  - kani__0002_immovable_finger
+  - kani__0001_movable_finger
+  - kani__0004_body
+  - kani__0000_right_arm
+  - kani__0010_left_legs_3
+  - kani__0003_left_arm
+  - kani__0007_right_legs_3
+  - kani__0009_left_legs_2
+  - kani__0006_right_legs_2
+  - kani__0008_left_legs_1
+  - kani__0005_right_legs_1
   m_Tag: Kani
   m_IsVariant: 0

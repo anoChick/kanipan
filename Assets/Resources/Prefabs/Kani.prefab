@@ -284,7 +284,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1787690809073882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -70.1, y: 3.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4054464697509314}
@@ -396,7 +396,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50180712894016186
 Rigidbody2D:
@@ -416,7 +416,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50435999506817898
 Rigidbody2D:
@@ -436,7 +436,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50500553293631160
 Rigidbody2D:
@@ -456,7 +456,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50541641432482494
 Rigidbody2D:
@@ -476,7 +476,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50562390507457830
 Rigidbody2D:
@@ -496,7 +496,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50634214853884280
 Rigidbody2D:
@@ -516,7 +516,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50880592410560928
 Rigidbody2D:
@@ -536,7 +536,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50894216708626302
 Rigidbody2D:
@@ -556,7 +556,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50897103261810942
 Rigidbody2D:
@@ -569,14 +569,14 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!50 &50901540066701460
 Rigidbody2D:
@@ -596,7 +596,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!60 &60115854490475812
 PolygonCollider2D:
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb9a06fa2a944cd980762df0ae5ec31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 300
+  power: 600
 --- !u!114 &114858455217996522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 50132351284759568}
   _centorTransform: {fileID: 4448493622463652}
   _centorOffset: {x: -0.87, y: 0.15}
-  _range: 3.03
+  _range: 2
 --- !u!212 &212140845898612558
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1706,7 +1706,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.350886, y: 0.27742785}
-  m_ConnectedAnchor: {x: -0.759114, y: -0.70357215}
+  m_ConnectedAnchor: {x: -0.7591171, y: -0.70357203}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1729,7 +1729,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.38349694, y: -0.31870982}
-  m_ConnectedAnchor: {x: 0.952503, y: 0.09429017}
+  m_ConnectedAnchor: {x: 0.9524994, y: 0.09429002}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1752,7 +1752,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.511108, y: 0.2750525}
-  m_ConnectedAnchor: {x: 0.61789197, y: -0.79194754}
+  m_ConnectedAnchor: {x: 0.6178894, y: -0.7919476}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1775,7 +1775,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.71782565, y: -1.3931379}
-  m_ConnectedAnchor: {x: -0.40917432, y: 0.426862}
+  m_ConnectedAnchor: {x: -0.40917206, y: 0.42686224}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1798,7 +1798,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.8, y: -1.11}
-  m_ConnectedAnchor: {x: 0.775, y: -1.3649999}
+  m_ConnectedAnchor: {x: 0.7750015, y: -1.3649998}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1821,7 +1821,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.50128645, y: 0.18974161}
-  m_ConnectedAnchor: {x: 0.88871354, y: -0.6562584}
+  m_ConnectedAnchor: {x: 0.88871, y: -0.65625834}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1844,7 +1844,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.50630856, y: -0.39669716}
-  m_ConnectedAnchor: {x: -0.87669146, y: 0.20230281}
+  m_ConnectedAnchor: {x: -0.8766937, y: 0.2023027}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1867,7 +1867,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.4142809, y: 0.2008751}
-  m_ConnectedAnchor: {x: -0.9737191, y: -0.50512487}
+  m_ConnectedAnchor: {x: -0.97371674, y: -0.50512505}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1890,7 +1890,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.38424122, y: 0.10993859}
-  m_ConnectedAnchor: {x: -1.0457587, y: -0.2880614}
+  m_ConnectedAnchor: {x: -1.0457611, y: -0.28806138}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1913,7 +1913,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.35322416, y: 0.117144525}
-  m_ConnectedAnchor: {x: 1.0537758, y: -0.4918555}
+  m_ConnectedAnchor: {x: 1.053772, y: -0.49185538}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
