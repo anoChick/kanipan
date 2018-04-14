@@ -1052,9 +1052,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyCodeUp: Q
   keyCodeDown: W
-  playerCore: {fileID: 114751587138750182}
-  rigidbody: {fileID: 50100477876397072}
   leftSide: 0
+  playerCore: {fileID: 114751587138750182}
+  _rigidbody: {fileID: 50100477876397072}
 --- !u!114 &114742624899081432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1068,9 +1068,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyCodeUp: E
   keyCodeDown: R
-  playerCore: {fileID: 114751587138750182}
-  rigidbody: {fileID: 50571309507819452}
   leftSide: 1
+  playerCore: {fileID: 114751587138750182}
+  _rigidbody: {fileID: 50571309507819452}
 --- !u!114 &114751587138750182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1082,6 +1082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb9a06fa2a944cd980762df0ae5ec31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  power: 300
 --- !u!212 &212139947119504746
 SpriteRenderer:
   m_ObjectHideFlags: 1
