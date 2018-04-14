@@ -7,6 +7,11 @@ namespace Players.ImputEventImpls
 {
     public class KeyboardMouseInputEventProvider : MonoBehaviour, IInputEventProvider
     {
+        void Awake()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         public IObservable<bool> GetButtonAsObservable(string buttonName)
         {
             return this.ObserveEveryValueChanged(_ => Input.GetButton(buttonName));
