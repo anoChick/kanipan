@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 50162397185800606}
   - component: {fileID: 60981407370148726}
   - component: {fileID: 114751587138750182}
+  - component: {fileID: 114267985230685968}
   m_Layer: 8
   m_Name: kani__0006_body
   m_TagString: Untagged
@@ -1041,6 +1042,22 @@ PolygonCollider2D:
       - {x: 0.21, y: 0.7}
       - {x: 0.22, y: 0.74}
       - {x: 0.22, y: 0.76}
+--- !u!114 &114267985230685968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944720094148420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 114751587138750182}
+  _identifier: 
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!114 &114326189249412268
 MonoBehaviour:
   m_ObjectHideFlags: 1

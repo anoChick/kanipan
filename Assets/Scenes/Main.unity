@@ -311,24 +311,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114742624899081432, guid: 4e0846afc795f32459a2a2b549430029,
-        type: 2}
-      propertyPath: _rigidbody
-      value: 
-      objectReference: {fileID: 2105296147}
-    - target: {fileID: 114535418529985454, guid: 4e0846afc795f32459a2a2b549430029,
-        type: 2}
-      propertyPath: _rigidbody
-      value: 
-      objectReference: {fileID: 181637441}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e0846afc795f32459a2a2b549430029, type: 2}
   m_IsPrefabParent: 0
---- !u!50 &181637441 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50100477876397072, guid: 4e0846afc795f32459a2a2b549430029,
-    type: 2}
-  m_PrefabInternal: {fileID: 92673958}
 --- !u!1 &235048475
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,33 +1153,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1525867707 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1944720094148420, guid: 4e0846afc795f32459a2a2b549430029,
-    type: 2}
-  m_PrefabInternal: {fileID: 92673958}
---- !u!114 &1525867709 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114751587138750182, guid: 4e0846afc795f32459a2a2b549430029,
-    type: 2}
-  m_PrefabInternal: {fileID: 92673958}
-  m_Script: {fileID: 11500000, guid: 4cb9a06fa2a944cd980762df0ae5ec31, type: 3}
---- !u!114 &1525867712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1525867707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _components:
-  - {fileID: 1525867709}
-  _identifier: 
-  _context: {fileID: 0}
-  _bindType: 0
 --- !u!1 &1880508966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,8 +1457,3 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!50 &2105296147 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50571309507819452, guid: 4e0846afc795f32459a2a2b549430029,
-    type: 2}
-  m_PrefabInternal: {fileID: 92673958}
